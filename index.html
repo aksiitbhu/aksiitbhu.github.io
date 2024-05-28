@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Profile</title>
+    <title>Dr. Ashwini Kumar Singh - Academic Profile</title>
     <style>
         body {
+            display: flex;
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
@@ -13,24 +14,44 @@
             color: #333;
             background-color: #f4f4f4;
         }
-        header {
+        nav {
             background: #333;
             color: #fff;
-            padding: 1rem 0;
+            padding: 20px;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+        nav header {
             text-align: center;
+            margin-bottom: 20px;
+        }
+        nav header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .profile-picture {
-            display: block;
-            margin: 20px auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+            margin-left: 270px;
+            padding: 20px;
+            flex: 1;
         }
         h2 {
             color: #333;
@@ -61,64 +82,63 @@
     </style>
 </head>
 <body>
-    <header>
-        
-    </header>
-
-        <div class="container">
-        <img src="ask.jpg" alt="Profile Picture" class="profile-picture">
+    <nav>
+        <header>
+            <img src="ask.jpg" alt="Dr. Ashwini Kumar Singh">
+            <h2>Dr. A. K. Singh</h2>
+            <p>Associate Professor, Computer Science</p>
+        </header>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research-interests">Research Interests</a></li>
+            <li><a href="#technical-skills">Technical Skills</a></li>
+            <li><a href="https://aksiitbhu.github.io/education.html">Education</a></li>
+            <li><a href="https://aksiitbhu.github.io/research.html">Research Experience</a></li>
+            <li><a href="https://aksiitbhu.github.io/publications.html">Selected Publications</a></li>
+            <li><a href="https://aksiitbhu.github.io/certifications.html">Certifications</a></li>
+            <li><a href="https://aksiitbhu.github.io/selected-workshops-conferences.html">Workshops & Conferences</a></li>
+            <li><a href="https://aksiitbhu.github.io/awards.html">Fellowships & Awards</a></li>
+            <li><a href="https://aksiitbhu.github.io/academic-achievements.html">Academic Achievements</a></li>
+            <li><a href="https://aksiitbhu.github.io/teaching-experiences.html">Teaching Experiences</a></li>
+            <li><a href="https://aksiitbhu.github.io/projects.html">Projects</a></li>
+            <li><a href="https://aksiitbhu.github.io/referees.html">Referees</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
-          <h1>Dr. Ashwini Kumar Singh</h1>
-        <div class="contact-info">
-            <p><strong>Postdoctoral Research Associate</strong></p>
-            <p><strong>Department of Informatics,</strong></p>
-            <p><strong>King's College London, United Kingdom</strong></p>
-            <p><strong>Mobile:</strong> (+91) 8006936640</p>
-            <p><strong>Email:</strong> <a href="mailto:ashwini.21mar@gmail.com">ashwini.21mar@gmail.com</a></p>
-        </div>
-   
+        <header>
+            <h1>Dr. Ashwini Kumar Singh</h1>
+            <div class="contact-info">
+                <p><strong>Postdoctoral Research Associate</strong></p>
+                <p><strong>Department of Informatics,</strong></p>
+                <p><strong>King's College London, United Kingdom</strong></p>
+                <p><strong>Mobile:</strong> (+91) 8006936640</p>
+                <p><strong>Email:</strong> <a href="mailto:ashwini.21mar@gmail.com">ashwini.21mar@gmail.com</a></p>
+            </div>
+        </header>
 
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal website! I am Dr. A. K. Singh, an accomplished educator and researcher in computer science. Currently, I serve as an Associate Professor at Graphic Era Deemed to be University, bringing over a decade of teaching experience to the table.</p>
+            <p>I earned my Ph.D. from the prestigious Indian Institute of Technology (BHU), Varanasi, where my research focused on Network Science particularly dynamic social networks. My academic journey continued with a postdoc position at King's College London, United Kingdom.</p>
+            <p>My work has been published in leading conferences (AAAI-ICWSM24, ICSA-24) and journals (Neurocomputing, Multimedia Tools and Applications), reflecting my expertise in Machine Learning, NLP, Network Science, and Social Networks Analysis. I am passionate about staying at the forefront of my field, regularly attending international workshops, conferences, and FDPs. My goal is to inspire my students, igniting their curiosity and enthusiasm for Computer Science Research.</p>
+        </section>
 
-       
-
-         <section id="about">
-                <h2>About Me</h2>
-                <p>Welcome to my personal website! I am Dr. A. K. Singh, an accomplished educator and researcher in computer science. Currently, I serve as an Associate Professor at Graphic Era Deemed to be University, bringing over a decade of teaching experience to the table.</p>
-                <p>I earned my Ph.D. from the prestigious Indian Institute of Technology (BHU), Varanasi, where my research focused on Network Science particularly dynamic social networks. My academic journey continued with a postdoc position at King's College London, United Kingdom. </p>
-                <p>My work has been published in leading conferences (AAAI-ICWSM24, ICSA-24) and journals(Neurocomputing, Multimedia Tools and Applications), reflecting my expertise in Machine Learning, NLP, Network Science and Social Networks Analysis. I am passionate about staying at the forefront of my field, regularly attending international workshops, conferences and FDPs. My goal is to inspire my students, igniting their curiosity and enthusiasm for Computer Science Research.</p>
-            </section>
-         <div class="section">
+        <section id="research-interests">
             <h2>Research Interests</h2>
             <p>Computational Social Science, Natural Language Processing, Large Language Models, Generative AI, Deep Learning, Machine Learning, Network Science</p>
-        </div>
+        </section>
 
-        <div class="section">
+        <section id="technical-skills">
             <h2>Technical Skills</h2>
             <p>Python, PyTorch, scikit-learn, TensorFlow, Keras, GPT, BERT, Fine-tuning LLMs, Quantitative Data Analysis, Neo4j, NetworkX</p>
-        </div>
+        </section>
+    </div>
 
-          <h3><a href="https://aksiitbhu.github.io/education.html"><h3>Education</h3></a></h3>
-          <h3><a href="https://aksiitbhu.github.io/research.html"><h3>Research Experience</h3></a></h3>
-          <h3><a href="https://aksiitbhu.github.io/publications.html"><h3>Selected Publications</h3></a></h3>
-          <h3><a href="https://aksiitbhu.github.io/certifications.html"><h3>Certifications</h3></a></h3>
-          <h3><a href="https://aksiitbhu.github.io/selected-workshops-conferences.html"><h3>Selected Workshops & Conferences Attended</h3></a></h3>
-          <h3><a href="https://aksiitbhu.github.io/awards.html"><h3>Fellowships & Awards</h3></a></h3>  
-          <h3><a href="https://aksiitbhu.github.io/academic-achievements.html"><h3>Academic Achievements</h3></a></h3>
-          <h3><a href="https://aksiitbhu.github.io/teaching-experiences.html"><h3>Teaching Experiences</h3></a></h3>
-          <h3><a href="https://aksiitbhu.github.io/projects.html"><h3>Projects</h3></a></h3>
-          <h3><a href="https://aksiitbhu.github.io/referees.html"><h3>Referees</h3></a></h3>
-
-    
-
-        
-        
-
-        
-
-             
-
-     
+    <footer>
+        <p>&copy; 2024 Dr. A. K. Singh. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
            
