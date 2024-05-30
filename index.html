@@ -168,40 +168,6 @@
         <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" id="uk-flag">
     </div>
 
-    <script>
-        // Simulate fetching the visit count from a backend
-        function fetchVisitCount() {
-            return new Promise((resolve) => {
-                setTimeout(() => {
-                    const visitCount = localStorage.getItem('visitCount') || 0;
-                    resolve(parseInt(visitCount) + 1);
-                }, 1000);
-            });
-        }
-
-        function updateVisitCount() {
-            fetchVisitCount().then(count => {
-                document.getElementById('visit-count').textContent = count;
-                localStorage.setItem('visitCount', count);
-            });
-        }
-
-        // Simulate setting the user's country
-        function getUserCountry() {
-            // In a real scenario, you might use an API to determine the user's country
-            return 'us'; // Default to 'us' for this example
-        }
-
-        function showFlag() {
-            const country = getUserCountry();
-            document.getElementById(`${country}-flag`).style.border = '3px solid green';
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            updateVisitCount();
-            showFlag();
-        });
-    </script>
     
 
 </body>
