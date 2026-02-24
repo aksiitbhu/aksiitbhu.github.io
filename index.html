@@ -1,172 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ashwini Kumar Singh - Academic Profile</title>
-        <style>
-        body {
-            display: flex;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 1;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-              .profile-picture {
-            display: block;
-            margin: 20px auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-        nav {
-            background: #333;
-            color: #fff;
-            padding: 10px;
-            width: 250px;
-            height: 100vh;
-            position: fixed;
-            overflow-y: auto;
-        }
-        nav header {
-            text-align: center;
-            margin-bottom: 5px;
-        }
-            .counter {
-            font-size: 2em;
-            margin: 20px;
-        }
-        .flags img {
-            width: 50px;
-            margin: 5px;
-        }
-        nav header img {
-            border-radius: 5%;
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            margin-bottom: 5px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 2px 0;
-        }
-        nav ul li a {
-            display: block;
-            padding: 5px;
-            background: #555; /* Button background color */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 1px;
-            text-align: center;
-        }
-        nav ul li a:hover {
-            background: #777; /* Button hover color */
-        }
-        .container {
-            margin-left: 370px;
-            margin-right: 70px;
-            padding: 20px;
-            flex: 1;
-        }
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background: #fff;
-            margin: 0.5rem 0;
-            padding: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        p {
-            margin: 0.5rem 0;
-        }
-            li {
-            margin: 0.5rem 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #333;
-            color: #fff;
-            margin-top: 2rem;
-        }
-    </style>
-   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Ashwini Kumar Singh</title>
+
+<style>
+
+/* ===== Global ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Georgia", serif;
+    background:#ffffff;
+    color:#111;
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+    color:#8c1515;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* ===== Layout ===== */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* ===== Top Navigation ===== */
+
+nav{
+    border-bottom:1px solid #e5e5e5;
+    padding:20px 0;
+    margin-bottom:50px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:flex-end;
+    gap:30px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size:14px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+/* ===== Hero Section ===== */
+
+.hero{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    gap:50px;
+    margin-bottom:80px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:4px;
+}
+
+.hero h1{
+    font-size:36px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.hero h3{
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight:400;
+    font-size:16px;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:600px;
+}
+
+/* ===== Sections ===== */
+
+section{
+    margin-bottom:80px;
+}
+
+section h2{
+    font-size:22px;
+    font-weight:500;
+    margin-bottom:25px;
+    border-bottom:2px solid #111;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.research-list p{
+    margin-bottom:10px;
+}
+
+/* ===== Skills Grid ===== */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:15px;
+    font-family:"Helvetica Neue", sans-serif;
+}
+
+.skill-item{
+    padding:12px 15px;
+    border:1px solid #ddd;
+    background:#fafafa;
+    font-size:14px;
+}
+
+/* ===== Publications ===== */
+
+.pub{
+    margin-bottom:20px;
+}
+
+.pub span{
+    display:block;
+    font-family:"Helvetica Neue", sans-serif;
+    font-size:14px;
+    color:#555;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    border-top:1px solid #e5e5e5;
+    padding:30px 0;
+    font-family:"Helvetica Neue", sans-serif;
+    font-size:14px;
+    color:#777;
+}
+
+@media(max-width:800px){
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .hero img{
+        margin:auto;
+    }
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+}
+
+</style>
 </head>
+
 <body>
-    <nav>
-       
-        <ul>
-            <li><a href="https://aksiitbhu.github.io/services.html">Services</a></li>
-            <li><a href="https://aksiitbhu.github.io/education.html">Education</a></li>
-            <li><a href="https://aksiitbhu.github.io/research.html">Research Experience</a></li>
-            <li><a href="https://aksiitbhu.github.io/publications.html">Selected Publications</a></li>
-            <li><a href="https://aksiitbhu.github.io/certifications.html">Certifications</a></li>
-            <li><a href="https://aksiitbhu.github.io/selected-workshops-conferences.html">Workshops & Conferences</a></li>
-            <li><a href="https://aksiitbhu.github.io/awards.html">Fellowships & Awards</a></li>
-            <li><a href="https://aksiitbhu.github.io/academic-achievements.html">Academic Achievements</a></li>
-            <li><a href="https://aksiitbhu.github.io/teaching-experiences.html">Teaching Experiences</a></li>
-            <li><a href="https://aksiitbhu.github.io/projects.html">Projects</a></li>
-            <li><a href="https://aksiitbhu.github.io/referees.html">Referees</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <header>
- 
-            <img src="ask.jpg" alt="Profile Picture" class="profile-picture">
-            
-            <h1>Dr. Ashwini Kumar Singh</h1>
-            <div class="contact-info">
-                <p><strong>Postdoctoral Research Associate</strong></p>
-                <p><strong>Department of Informatics,</strong></p>
-                <p><strong>King's College London, United Kingdom</strong></p>
-                <p><strong>Connect me on:</strong> <strong>Mobile:</strong> (+91) 8006936640 ; <strong>Email:</strong> <a href="mailto:ashwini.21mar@gmail.com">ashwini.21mar@gmail.com</a></p>
-                <p><strong>URLs:</strong> <a href="https://github.com/aksiitbhu">GitHub</a> ; <a href="https://www.linkedin.com/in/ashwini-kumar-singh-ph-d-b01bb2175/">LinkedIn</a></p>
-                
-            </div>
-        </header>
+<div class="container">
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my personal website! I am Dr. A. K. Singh, an accomplished educator and researcher in computer science. Currently, I serve as an Associate Professor at Sitare University, India. Earlier, I worked as an Associate Professor in Graphic Era University Dehradun for over a decade.</p>
-            <p>I earned my Ph.D. from the prestigious Indian Institute of Technology (BHU), Varanasi, where my research focused on Network Science particularly dynamic social networks. My academic journey continued with a postdoc position at King's College London, United Kingdom.</p>
-            <p>My work has been published in leading conferences (AAAI-ICWSM24, ICSA-24) and journals (Neurocomputing, Multimedia Tools and Applications), reflecting my expertise in Machine Learning, NLP, Network Science, and Social Networks Analysis. I am passionate about staying at the forefront of my field, regularly attending international workshops, conferences, and FDPs. My goal is to inspire my students, igniting their curiosity and enthusiasm for Computer Science research, development and applications.</p>
-          </section>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 
-        <section id="research-interests">
-            <h2>Research Interests</h2>
-            <p>Computational Social Science, Natural Language Processing, Large Language Models, Generative AI, Deep Learning, Machine Learning, Network Science</p>
-        </section>
+<div class="hero">
+<img src="ask.jpg" alt="Dr. Ashwini Kumar Singh">
+<div>
+<h1>Dr. Ashwini Kumar Singh</h1>
+<h3>Postdoctoral Research Associate<br>
+Department of Informatics, King's College London</h3>
 
-        <section id="technical-skills">
-            <h2>Technical Skills</h2>
-            <p>Python, PyTorch, scikit-learn, TensorFlow, Keras, GPT, BERT, Fine-tuning LLMs, Quantitative Data Analysis, Neo4j, NetworkX</p>
-        </section>
-  
+<p>
+I am a researcher in Machine Learning, Natural Language Processing, and Network Science. 
+My work explores dynamic social networks, large language models, and computational social science. 
+I earned my Ph.D. from IIT (BHU), Varanasi, and previously served as Associate Professor in India.
+</p>
 
-<section id="counter">
-    <h2>Visitors by Country Counter</h2>
-    <a target="_blank" href="https://smallcounter.com/conline/1717069980/"><img alt="visitors by country counter" border="0" src="https://smallcounter.com/online/fcc.php?id=1717069980"></a><br><a target="_blank" href="https://smallcounter.com"></a>
-     
-   </section>
-        
-    </div>
+<p style="margin-top:15px;">
+Email: <a href="mailto:ashwini.21mar@gmail.com">ashwini.21mar@gmail.com</a><br>
+GitHub: <a href="https://github.com/aksiitbhu">github.com/aksiitbhu</a><br>
+LinkedIn: <a href="https://linkedin.com">LinkedIn Profile</a>
+</p>
+
+</div>
+</div>
+
+<section id="research">
+<h2>Research Interests</h2>
+<div class="research-list">
+<p>Computational Social Science</p>
+<p>Natural Language Processing</p>
+<p>Large Language Models & Generative AI</p>
+<p>Network Science & Dynamic Graphs</p>
+<p>Machine Learning & Deep Learning</p>
+</div>
+</section>
+
+<section id="publications">
+<h2>Selected Publications</h2>
+
+<div class="pub">
+<strong>Understanding Dynamic Social Networks using Graph Neural Models</strong>
+<span>AAAI-ICWSM 2024</span>
+</div>
+
+<div class="pub">
+<strong>Community Detection in Evolving Networks</strong>
+<span>Neurocomputing Journal</span>
+</div>
+
+<div class="pub">
+<strong>Information Diffusion in Online Social Media</strong>
+<span>Multimedia Tools & Applications</span>
+</div>
+
+</section>
+
+<section id="skills">
+<h2>Technical Expertise</h2>
+<div class="skills">
+<div class="skill-item">Python</div>
+<div class="skill-item">PyTorch</div>
+<div class="skill-item">TensorFlow</div>
+<div class="skill-item">scikit-learn</div>
+<div class="skill-item">BERT / GPT</div>
+<div class="skill-item">LLM Fine-tuning</div>
+<div class="skill-item">Neo4j</div>
+<div class="skill-item">NetworkX</div>
+</div>
+</section>
+
+<footer>
+© 2026 Dr. Ashwini Kumar Singh | Academic Website
+</footer>
+
+</div>
+
 </body>
 </html>
-
-           
