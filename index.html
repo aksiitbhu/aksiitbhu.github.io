@@ -7,7 +7,7 @@
 
 <style>
 
-/* ===== Global ===== */
+/* ===== GLOBAL ===== */
 
 *{
     margin:0;
@@ -16,22 +16,11 @@
 }
 
 body{
-    font-family: "Georgia", serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     background:#ffffff;
     color:#111;
-    line-height:1.8;
+    line-height:1.7;
 }
-
-a{
-    text-decoration:none;
-    color:#8c1515;
-}
-
-a:hover{
-    text-decoration:underline;
-}
-
-/* ===== Layout ===== */
 
 .container{
     max-width:1100px;
@@ -39,12 +28,26 @@ a:hover{
     padding:40px 20px;
 }
 
-/* ===== Top Navigation ===== */
+h1,h2,h3{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight:500;
+}
+
+a{
+    color:#8A1C1C;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* ===== NAVIGATION ===== */
 
 nav{
     border-bottom:1px solid #e5e5e5;
-    padding:20px 0;
-    margin-bottom:50px;
+    padding-bottom:20px;
+    margin-bottom:60px;
 }
 
 nav ul{
@@ -52,47 +55,43 @@ nav ul{
     display:flex;
     justify-content:flex-end;
     gap:30px;
-    font-family: "Helvetica Neue", sans-serif;
     font-size:14px;
-    letter-spacing:1px;
     text-transform:uppercase;
+    letter-spacing:1px;
 }
 
-/* ===== Hero Section ===== */
+/* ===== HERO ===== */
 
 .hero{
     display:grid;
-    grid-template-columns:250px 1fr;
-    gap:50px;
+    grid-template-columns:260px 1fr;
+    gap:60px;
     margin-bottom:80px;
 }
 
 .hero img{
-    width:220px;
-    height:220px;
+    width:240px;
+    height:240px;
     object-fit:cover;
     border-radius:4px;
 }
 
 .hero h1{
     font-size:36px;
-    font-weight:500;
     margin-bottom:10px;
 }
 
 .hero h3{
-    font-family: "Helvetica Neue", sans-serif;
     font-weight:400;
-    font-size:16px;
     color:#555;
     margin-bottom:20px;
 }
 
 .hero p{
-    max-width:600px;
+    max-width:650px;
 }
 
-/* ===== Sections ===== */
+/* ===== SECTIONS ===== */
 
 section{
     margin-bottom:80px;
@@ -100,55 +99,48 @@ section{
 
 section h2{
     font-size:22px;
-    font-weight:500;
     margin-bottom:25px;
     border-bottom:2px solid #111;
     display:inline-block;
     padding-bottom:5px;
 }
 
-.research-list p{
-    margin-bottom:10px;
-}
-
-/* ===== Skills Grid ===== */
-
-.skills{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-    gap:15px;
-    font-family:"Helvetica Neue", sans-serif;
-}
-
-.skill-item{
-    padding:12px 15px;
-    border:1px solid #ddd;
-    background:#fafafa;
-    font-size:14px;
-}
-
-/* ===== Publications ===== */
+/* ===== PUBLICATIONS ===== */
 
 .pub{
     margin-bottom:20px;
 }
 
+.pub strong{
+    font-weight:600;
+}
+
 .pub span{
     display:block;
-    font-family:"Helvetica Neue", sans-serif;
     font-size:14px;
     color:#555;
 }
 
-/* ===== Footer ===== */
+/* ===== LISTS ===== */
+
+ul.clean{
+    list-style:none;
+}
+
+ul.clean li{
+    margin-bottom:10px;
+}
+
+/* ===== FOOTER ===== */
 
 footer{
     border-top:1px solid #e5e5e5;
     padding:30px 0;
-    font-family:"Helvetica Neue", sans-serif;
     font-size:14px;
     color:#777;
 }
+
+/* ===== RESPONSIVE ===== */
 
 @media(max-width:800px){
     .hero{
@@ -173,32 +165,33 @@ footer{
 
 <nav>
 <ul>
-<li><a href="#about">About</a></li>
 <li><a href="#research">Research</a></li>
 <li><a href="#publications">Publications</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="#teaching">Teaching</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
 <div class="hero">
 <img src="ask.jpg" alt="Dr. Ashwini Kumar Singh">
+
 <div>
 <h1>Dr. Ashwini Kumar Singh</h1>
-<h3>Postdoctoral Research Associate<br>
-Department of Informatics, King's College London</h3>
+<h3>Associate Professor, Department of Computer Science<br>
+Sitare University, India</h3>
 
 <p>
-I am a researcher in Machine Learning, Natural Language Processing, and Network Science. 
-My work explores dynamic social networks, large language models, and computational social science. 
-I earned my Ph.D. from IIT (BHU), Varanasi, and previously served as Associate Professor in India.
+I am a researcher in Computational Social Science, Natural Language Processing, 
+Large Language Models, and Network Science. I completed my Ph.D. from the Indian Institute 
+of Technology (BHU), Varanasi, and held a Postdoctoral Research position at King’s College London (2022–2024). 
+My work focuses on dynamic social networks, influence maximization, toxicity detection, 
+and generative AI systems.
 </p>
 
 <p style="margin-top:15px;">
 Email: <a href="mailto:ashwini.21mar@gmail.com">ashwini.21mar@gmail.com</a><br>
-GitHub: <a href="https://github.com/aksiitbhu">github.com/aksiitbhu</a><br>
-LinkedIn: <a href="https://linkedin.com">LinkedIn Profile</a>
+Mobile: +91 8006936640
 </p>
 
 </div>
@@ -206,51 +199,79 @@ LinkedIn: <a href="https://linkedin.com">LinkedIn Profile</a>
 
 <section id="research">
 <h2>Research Interests</h2>
-<div class="research-list">
-<p>Computational Social Science</p>
-<p>Natural Language Processing</p>
-<p>Large Language Models & Generative AI</p>
-<p>Network Science & Dynamic Graphs</p>
-<p>Machine Learning & Deep Learning</p>
-</div>
+<ul class="clean">
+<li>Computational Social Science</li>
+<li>Natural Language Processing</li>
+<li>Large Language Models & Generative AI</li>
+<li>Deep Learning & Machine Learning</li>
+<li>Network Science & Dynamic Graphs</li>
+</ul>
 </section>
 
 <section id="publications">
 <h2>Selected Publications</h2>
 
 <div class="pub">
-<strong>Understanding Dynamic Social Networks using Graph Neural Models</strong>
-<span>AAAI-ICWSM 2024</span>
+<strong>Hybrid Model for Event Recommendation System</strong><br>
+Ashish Misra, Vijay Singh, Arun Chauhan and Ashwini Kumar Singh<br>
+<span>Knowledge and Information Systems, 2025 (SCI)</span>
 </div>
 
 <div class="pub">
-<strong>Community Detection in Evolving Networks</strong>
-<span>Neurocomputing Journal</span>
+<strong>Dwarf Updated Pelican Optimization Algorithm for Depression and Suicide Detection</strong><br>
+Divya Agarwal et al.<br>
+<span>Psychiatric Quarterly, 2025 (SCI)</span>
 </div>
 
 <div class="pub">
-<strong>Information Diffusion in Online Social Media</strong>
-<span>Multimedia Tools & Applications</span>
+<strong>Link Prediction-Based Influence Maximization in Online Social Networks</strong><br>
+A.K. Singh & L. Kailasam<br>
+<span>Neurocomputing, 2021 (SCI)</span>
+</div>
+
+<div class="pub">
+<strong>Differences in the Toxic Language of Cross-Platform Communities</strong><br>
+ICWSM 2024 (AAAI Conference, CORE A)
+</div>
+
+<div class="pub">
+<strong>Brain-Inspired Software Architecture</strong><br>
+IEEE ICSA 2024 (CORE A)
 </div>
 
 </section>
 
-<section id="skills">
-<h2>Technical Expertise</h2>
-<div class="skills">
-<div class="skill-item">Python</div>
-<div class="skill-item">PyTorch</div>
-<div class="skill-item">TensorFlow</div>
-<div class="skill-item">scikit-learn</div>
-<div class="skill-item">BERT / GPT</div>
-<div class="skill-item">LLM Fine-tuning</div>
-<div class="skill-item">Neo4j</div>
-<div class="skill-item">NetworkX</div>
-</div>
+<section id="teaching">
+<h2>Academic Positions</h2>
+<ul class="clean">
+<li>2025–Present: Associate Professor, Sitare University, India</li>
+<li>2023–2024: Associate Professor, Graphic Era University</li>
+<li>2022–2024: Postdoctoral Research Associate, King’s College London</li>
+<li>2017–2021: Senior Research Fellow & Teaching Assistant, IIT (BHU)</li>
+<li>2011–2017: Assistant Professor, Graphic Era University</li>
+</ul>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<ul class="clean">
+<li>Ph.D., Computer Science, IIT (BHU), Varanasi (2017–2021)</li>
+<li>M.Tech., Computer Engineering, Shobhit University (2009–2011)</li>
+<li>B.Tech., Computer Science & Engineering (2003–2007)</li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Professional Service & Recognition</h2>
+<ul class="clean">
+<li>MHRD Fellowship for Ph.D., IIT (BHU)</li>
+<li>Qualified GATE 2017 (CSE)</li>
+<li>Qualified UGC-NET (2013, 2015)</li>
+</ul>
 </section>
 
 <footer>
-© 2026 Dr. Ashwini Kumar Singh | Academic Website
+© 2026 Dr. Ashwini Kumar Singh | Academic Homepage
 </footer>
 
 </div>
